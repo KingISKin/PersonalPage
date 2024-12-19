@@ -500,45 +500,48 @@ footer li {
     padding: 10px;
 }
 
-form h2 .SocialLinks {
-    padding: 5px;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: 10px;
-    background-color: #212529;
-    border-radius: 30px;
+/* Container dos links sociais */
+.SocialLinks {
+    display: flex;
+    flex-direction: column; /* Alinha os botões verticalmente */
+    justify-content: center; /* Centraliza verticalmente os botões */
+    align-items: center; /* Centraliza horizontalmente os botões */
+    gap: 15px; /* Espaçamento entre os botões */
+    position: fixed;
+    bottom: 20px; /* Distância da parte inferior */
+    right: 20px; /* Distância da lateral direita */
+    z-index: 1000; /* Garante que fiquem acima de outros elementos */
 }
 
-form h2 .SocialLinks i {
-    padding: 10px;
-    border-radius: 50%;
-    transition-duration: 0.25s;
+/* Estilo dos botões circulares */
+.social-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px; /* Largura do círculo */
+    height: 60px; /* Altura do círculo */
+    border-radius: 50%; /* Torna o botão circular */
+    background-color: #333; /* Cor de fundo */
+    color: white; /* Cor do ícone */
+    text-decoration: none; /* Remove sublinhado */
+    font-size: 1.5rem; /* Tamanho do ícone */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-form h2 .SocialLinks i:hover {
-    background-color: #8fbffd;
+/* Efeito ao passar o mouse */
+.social-btn:hover {
+    background-color: #0077b5; /* Cor ao passar o mouse */
+    transform: scale(1.1); /* Aumenta o botão ao passar o mouse */
 }
 
-.about-us {
-    overflow: auto;
-}
-
-/* Define a cor padrão para os ícones do GitHub */
-.SocialLinks a .fa-github {
-    color: #ffffff;
-}
-
-.SocialLinks a .fa-github:hover {
-    background-color: #8fbffd;
-}
-
-/* Define a cor padrão para os ícones do Instagram */
-.SocialLinks a .fa-instagram {
-    color: #860958;
-}
-
-.SocialLinks a .fa-instagram:hover {
-    background-color: #8fbffd;
+/* Efeito responsivo: ajustar tamanho em telas menores */
+@media (max-width: 600px) {
+    .social-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
 }
 
 /* Media Queries para Responsividade */
@@ -781,5 +784,46 @@ form h2 .SocialLinks i:hover {
 
     footer {
         font-size: 0.5rem;
+    }
+}
+/* Container dos botões */
+.circleButtons {
+    position: fixed;
+    bottom: 20px; /* Distância da parte inferior */
+    right: 20px; /* Distância da lateral direita */
+    display: flex;
+    flex-direction: column; /* Alinhar os botões em coluna */
+    gap: 15px; /* Espaçamento entre os botões */
+    z-index: 1000; /* Garante que os botões fiquem acima de outros elementos */
+}
+
+/* Estilo dos botões circulares */
+.circle-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px; /* Largura do círculo */
+    height: 60px; /* Altura do círculo */
+    border-radius: 50%; /* Torna o botão circular */
+    background-color: #333; /* Cor do fundo */
+    color: white; /* Cor do ícone */
+    text-decoration: none; /* Remove sublinhado */
+    font-size: 1.5rem; /* Tamanho do ícone */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Efeito ao passar o mouse */
+.circle-btn:hover {
+    background-color: #0077b5; /* Cor ao passar o mouse */
+    transform: scale(1.1); /* Aumenta o botão ao passar o mouse */
+}
+
+/* Efeito responsivo: ajustar tamanho em telas menores */
+@media (max-width: 600px) {
+    .circle-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
     }
 }

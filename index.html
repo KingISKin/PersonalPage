@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
     <link rel="icon" type="image/x-icon" href="./Assets/Images/favicon.ico">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
     <script defer src="main.js"></script>
@@ -64,11 +65,19 @@
                         <h1>Olá! Sou o <span class="stylized-name">João Victor</span>,</h1>
                         <h2> <span class="proffesions">Desenvolvedor Full-Stack</span></h2>
                         <p class="heroline">Atuo há 4 anos no mercado de trabalho, desenvolvendo soluções para sua empresa! </p>
-                        <div class="buttonGroup">
-                            <button onclick="window.location.href='https://github.com/KingISKin'">GitHub</button>
-                            <button onclick="window.location.href='https://linkedin.com/in/joão-victor-nunes1'">LinkedIn</button>
-                            <button onclick="window.location.href='https://drive.google.com/file/d/1SuHZbUCmj4JqoYKEhJFPFKV5JGZf1Lwm/view?usp=sharing'">Download CV</button>
+                        <div class="circleButtons">
+                            <a href="https://github.com/KingISKin" target="_blank" class="circle-btn">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://linkedin.com/in/joão-victor-nunes1" target="_blank" class="circle-btn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://drive.google.com/file/d/1SuHZbUCmj4JqoYKEhJFPFKV5JGZf1Lwm/view?usp=sharing" target="_blank" class="circle-btn">
+                                <i class="fas fa-file-download"></i>
+                            </a>
                         </div>
+                                          
+
                     </div>
                     <div class="SideImg">
                     </div>
@@ -85,14 +94,14 @@ Com uma grande experiência em desenvolvimento de soluções empresáriais. Soft
                     <div class="about-me-divison">
                         <div class="about-me-table">
                             <li><span>Experiência:</span> 4+ anos </li>
-                            <li><span>País:</span> Brazil</li>
+                            <li><span>País:</span> Brasil</li>
                             <li><span>Disponibilidade:</span> 24/7 </li>
                             <li><span>Projetos:</span>30+</li>
                             <li><span>Idade:</span> 22</li>
                             <li><span>Tel:</span>(11) 98958-1698</li>
                             <li><span>Linguas:</span> Português e Inglês</li>
                             <li><span>Formação:</span> Análise e desenvolvvimento de sistemas.</li>
-                            <div class="buttonGroup"><button>GitHub</button><button>LinkedIn</button><button>Download CV</button></div>
+                            
                         </div>
 
                         <div class="skill-bar">
@@ -218,9 +227,15 @@ Com uma grande experiência em desenvolvimento de soluções empresáriais. Soft
                     <form onsubmit="sendEmail(event)">
                         <h2>Vamos conversar!
                             <div class="SocialLinks">
-                                <a href="https://www.linkedin.com/in/joão-victor-nunes1/"><i class="fa-brands fa-linkedin"></i></a>
-                                <a href="https://github.com/KingISKin"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://www.linkedin.com/in/joão-victor-nunes1/" target="_blank" class="social-btn">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a>
+                                <a href="https://github.com/KingISKin" target="_blank" class="social-btn">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
                             </div>
+                            
+                            
                         </h2>
                         <input type="text" name="name" placeholder="Nome" required>
                         <input type="email" name="email" placeholder="Email" required>
