@@ -1,8 +1,8 @@
 // Inicializando o Swiper com efeitos de transição em cubo
 const swiper = new Swiper(".swiper", {
     effect: "cube",
-    allowTouchMove: false,        // Desativa a movimentação por toque
-    grabCursor: false,            // Desativa o cursor de "agarrar"
+    allowTouchMove: true,        // Desativa a movimentação por toque
+    grabCursor: true,            // Desativa o cursor de "agarrar"
     cubeEffect: {
         shadow: true,             // Ativa a sombra
         slideShadows: true,       // Ativa sombras dos slides
@@ -13,7 +13,7 @@ const swiper = new Swiper(".swiper", {
     speed: 800,                   // Define a velocidade da transição
     loop: true,                   // Habilita a rotação contínua entre os slides
     autoplay: {
-        delay: 3000,              // Intervalo automático entre os slides
+        delay: 100000,              // Intervalo automático entre os slides
         disableOnInteraction: true // Permite que o autoplay continue após interação
     }
 });
