@@ -14,7 +14,7 @@ const swiper = new Swiper(".swiper", {
     loop: true,                   // Habilita a rotação contínua entre os slides
     autoplay: {
         delay: 3000,              // Intervalo automático entre os slides
-        disableOnInteraction: false // Permite que o autoplay continue após interação
+        disableOnInteraction: true // Permite que o autoplay continue após interação
     }
 });
 
