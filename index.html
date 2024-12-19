@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <link rel="icon" type="image/x-icon" href="assets/Images/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+    <script defer src="main.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init("oae7M_yTK-GGIgluc"); // PK
+        })();
+
+        function sendEmail(event) {
+            event.preventDefault(); // Previne o comportamento padrão do envio do formulário
+
+            emailjs.sendForm('service_rppke95', 'template_9kctpfr', event.target)
+                .then(function() {
+                    alert('Email enviado com sucesso!');
+                }, function(error) {
+                    alert('Ocorreu um erro ao enviar o email: ' + JSON.stringify(error));
+                });
+        }
+    </script>
+    <title>João Victor - Portfolio</title>
+</head>
+<body>
+    <main>
+        <aside>
+            <!-- Logo AIExxplorer -->
+            <div class="logo-container">
+                
+            </div>
+        
+            <ul class="Links">
+                <li onclick="Navigate(0)" class="activeLink"><i class="fa-solid fa-house"></i>
+                    <p>Home</p>
+                </li>
+                <li onclick="Navigate(1)"><i class="fa-solid fa-user"></i>
+                    <p>Sobre Mim</p>
+                </li>
+                <li onclick="Navigate(2)"><i class="fa-solid fa-list"></i>
+                    <p>Serviços</p>
+                </li>
+                <li onclick="Navigate(3)"><i class="fa-solid fa-comments"></i>
+                    <p>Entre em contato</p>
+                </li>
+            </ul>
+        
+            <!-- Logo Artificial Universe -->
+            <div class="logo-container">
+                <img src="assets/Images/logo.png" alt="Logo">
+            </div>
+        </aside>
+        
+        <div class="swiper mySwiper">
+            <div class="SlideContainer swiper-wrapper">
+                <div class="swiper-slide home-slide">
+                    <div class="HomeContent">
+                        <h1>Olá! Sou o <span class="stylized-name">João Victor</span>,</h1>
+                        <h2> <span class="proffesions">Desenvolvedor Full-Stack</span></h2>
+                        <p class="heroline">Atuo há 4 anos no mercado de trabalho, desenvolvendo soluções para sua empresa! </p>
+                        <div class="buttonGroup">
+                            <button onclick="window.location.href='https://github.com/KingISKin'">GitHub</button>
+                            <button onclick="window.location.href='https://linkedin.com/in/joão-victor-nunes1'">LinkedIn</button>
+                            <button onclick="window.location.href='https://drive.google.com/file/d/1SuHZbUCmj4JqoYKEhJFPFKV5JGZf1Lwm/view?usp=sharing'">Download CV</button>
+                        </div>
+                    </div>
+                    <div class="SideImg">
+                    </div>
+                    <p class="slide-help">Role para a próxima página <i class="fa-solid fa-chevron-right fa-shake"></i>
+                    </p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="about-us">
+                    <h1 class="heading"><i class="fa-solid fa-user"></i> Sobre mim</h1>
+                    <h3 class="sub-heading">Sou o João Victor <span class="proffesions">um desenvolvedor Full-Stack</span></h3>
+                    <p class="aboutme-deatils">
+Com uma grande experiência em desenvolvimento de soluções empresáriais. Softwares, sistemas e automações para sua empresa!
+                    </p>
+                    <div class="about-me-divison">
+                        <div class="about-me-table">
+                            <li><span>Experiência:</span> 4+ anos </li>
+                            <li><span>País:</span> Brazil</li>
+                            <li><span>Disponibilidade:</span> 24/7 </li>
+                            <li><span>Projetos:</span>30+</li>
+                            <li><span>Idade:</span> 22</li>
+                            <li><span>Tel:</span>(11) 98958-1698</li>
+                            <li><span>Linguas:</span> Português e Inglês</li>
+                            <li><span>Formação:</span> Análise e desenvolvvimento de sistemas.</li>
+                            <div class="buttonGroup"><button>GitHub</button><button>LinkedIn</button><button>Download CV</button></div>
+                        </div>
+
+                        <div class="skill-bar">
+                            <div class="skill-column">
+                                <li>
+                                    <p>HTML</p>
+                                    <div class="bar">
+                                        <div class="active-bar" style="width:70%"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>CSS</p>
+                                    <div class="bar">
+                                        <div class="active-bar" style="width:65%"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>JavaScript</p>
+                                    <div class="bar">
+                                        <div class="active-bar" style="width:75%"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>Python</p>
+                                    <div class="bar">
+                                        <div class="active-bar" style="width:90%"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>React</p>
+                                    <div class="bar">
+                                        <div class="active-bar" style="width:55%"></div>
+                                    </div>
+                                </li>
+                            </div>
+                            <div class="skill-column">
+                                <li>
+                                    <p>TypeScript</p>
+                                    <div class="bar">
+                                        <div class="active-bar" style="width:60%"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>MySQL</p>
+                                    <div class="bar">
+                                        <div class="active-bar" style="width:55%"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>C#</p>
+                                    <div class="bar">
+                                        <div class="active-bar" style="width:50%"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>Java</p>
+                                    <div class="bar">
+                                        <div class="active-bar" style="width:45%"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>PHP</p>
+                                    <div class="bar">
+                                        <div class="active-bar" style="width:70%"></div>
+                                    </div>
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                </div></div>
+                <div class="swiper-slide services">
+                    <h1 class="heading"><i class="fa-solid fa-cogs"></i> Serviços</h1>
+                    <div class="service">
+                        <div class="service-icon"><i class="fa-solid fa-pen-ruler"></i></div>
+                        <h2>Design Web</h2>
+                        <p>Designs web visualmente centrados para aprimorar as experiências do usuário.</p>
+                    </div>
+                    <div class="service">
+                        <div class="service-icon"><i class="fa-solid fa-globe"></i></div>
+                        <h3>Desenvolvimento Web</h3>
+                        <p>Desenvolvimento de aplicativos web ​​e robustos com foco em uma excelente funcionalidade.</p>
+                    </div>
+                    <div class="service">
+                        <div class="service-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                        <h3>RPA</h3>
+                        <p>Automações em tarefas repetitivas e processos que aumentam a eficiência do seu negócio.</p>
+                    </div>
+                    <div class="service">
+                        <div class="service-icon"><i class="fa-solid fa-database"></i></div>
+                        <h3>Análise de Dados</h3>
+                        <p>Transformação de informações em insights valiosos, ajudando a tomada de decisões eficientes e estratégicas.</p>
+                    </div>
+                    <div class="service">
+                        <div class="service-icon"><i class="fa-solid fa-brain"></i></div>
+                        <h3>Sistemas empresáriais</h3>
+                        <p>Sistemas empresariais personalizados para otimizar processos, integrar operações e melhorar a gestão do seu negócio.</p>
+                    </div>
+                    <div class="service">
+                        <div class="service-icon"><i class="fa-solid fa-network-wired"></i></div>
+                        <h3>Soluções Administrativas</h3>
+                        <p>Soluções que simplificam processos, aumentam a eficiência e facilitam a gestão do seu negócio.</p>
+                    </div>
+                </div>
+                
+                
+                <div class="swiper-slide contactMe">
+                    <h1 class="heading"><i class="fa-solid fa-envelope"></i> Entre em contato</h1>
+                <div>
+                    <div class="contactinfo"><i class="fa-solid fa-phone"></i>
+                        <h3>Tel</h3>
+                        <p>(11) 98958-1698</p>
+                    </div>
+                    <div class="contactinfo"><i class="fa-solid fa-location-dot"></i>
+                        <h3>Localidade</h3>
+                        <p>São Paulo - SP</p>
+                    </div>
+                    <div class="contactinfo"><i class="fa-regular fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>joaovictornunes076@gmail.com</p>
+                    </div>
+                </div>
+
+                    <form onsubmit="sendEmail(event)">
+                        <h2>Vamos conversar!
+                            <div class="SocialLinks">
+                                <a href="https://www.linkedin.com/in/joão-victor-nunes1/"><i class="fa-brands fa-linkedin"></i></a>
+                                <a href="https://github.com/KingISKin"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </h2>
+                        <input type="text" name="name" placeholder="Nome" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <textarea name="message" rows="10" placeholder="Do que você precisa?" required></textarea>
+                        <button type="submit" class="primary">Enviar</button>
+                    </form>                    
+                    <footer>
+                        <li>&copy; 2024 João Santos </li>
+                    </footer>
+                </div>
+            </div>
+    </main>
+</body>
+</html>
