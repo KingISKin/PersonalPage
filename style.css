@@ -652,11 +652,11 @@ footer li {
 /* Para dispositivos tablets */
 @media (max-width: 1024px) {
     .HomeContent h1 {
-        font-size: 2.5rem;
+        font-size: 2.1rem;
     }
 
     .HomeContent h2 {
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
 
     .mySwiper {
@@ -664,12 +664,35 @@ footer li {
         height: 100vh;
     }
 
+    .about-us h1 {
+        font-size: 2rem;
+    }
+
+    .about-us h3 {
+        font-size: 1.7rem;
+    }
+
+    .about-us p {
+        font-size: 1rem;
+    }
+
+    .about-me-table li {
+        font-size: 1rem;
+    }
+
     .services {
         grid-template-columns: repeat(2, 1fr);
     }
+    .services h2, h3 {
+        font-size: 0.8rem;
+    }
 
-    .gallery {
-        grid-template-columns: repeat(2, 1fr);
+    .services p {
+        font-size: 0.6rem;
+    }
+
+    .skill-column p {
+        font-size: 0.8rem;
     }
 
     .contactMe {
@@ -677,55 +700,190 @@ footer li {
         grid-template-rows: auto auto auto auto;
     }
 
+    .contactMe h1 {
+        font-size: 2rem;
+    }
+
     .contactMe form {
-        grid-template-columns: 1fr;
+        font-size: 1rem;
+    }
+
+    aside {
+        width: 20%; /* Ajusta o menu para telas pequenas */
+    }
+
+    ul.Links li i {
+        font-size: 1rem; /* Reduz o tamanho dos ícones */
+    }
+
+    ul.Links li p {
+        font-size: 1rem; /* Reduz o tamanho do texto */
     }
 }
 
-/* Para dispositivos móveis */
-@media (max-width: 768px) {
-    aside {
-        width: 100%;
-        height: auto;
-        position: relative;
+    /* Form */
+    .form input[type="text"],
+    .form input[type="email"],
+    .form textarea {
+        width: 90%; /* Ou uma largura fixa, como 80% */
+        max-width: 500px; /* Tamanho máximo */
+        height: 40px; /* Para inputs */
+        padding: 25px; /* Espaço interno */
+        margin-bottom: 25px; /* Espaçamento entre campos */
+        font-size: 1rem; /* Ajuste do tamanho da fonte */
+        border-radius: 10px; /* Bordas arredondadas */
     }
 
-    .Links {
-        margin: 20px 10px;
+    /* Específico para o textarea */
+    .form textarea {
+        height: 200px;/* Altura para mensagens longas */
+        resize:horizontal; /* Permite redimensionar verticalmente */
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column; /* Empilha os campos */
+        align-items: center; /* Centraliza */
+    }
+
+    .form button {
+        width: 150px; /* Tamanho do botão */
+        height: 40px; /* Altura */
+        background-color: #123458; /* Cor de fundo */
+        color: white; /* Cor do texto */
+        border: none; /* Remove borda */
+        border-radius: 5px; /* Bordas arredondadas */
+        cursor: pointer; /* Muda cursor ao passar o mouse */
+        font-size: 1rem; /* Ajusta fonte */
+        transition: background-color 0.3s ease; /* Efeito suave */
+    }
+    
+    /* Efeito hover */
+    .form button:hover {
+        background-color: #4b86ca;
+    }
+
+
+/* Para dispositivos móveis */
+@media (max-width: 768px) {
+    .HomeContent h1 {
+        font-size: 1rem; /* Fontes menores para cabeçalhos */
+    }
+
+    .HomeContent h2 {
+        font-size: 0.9rem;
     }
 
     .mySwiper {
-        height: 60vh;
-        padding: 10px;
+        width: 100%;
+        height: auto;
     }
 
-    .HomeContent {
-        padding: 50px 20px;
+    .about-us h1 {
+        font-size: 1.2rem; /* Tamanho reduzido */
     }
 
-    .SideImg {
-        width: 80%;
-        margin-right: 0;
+    .about-us h3 {
+        font-size: 1rem;
     }
 
-    .gallery {
-        grid-template-columns: 1fr;
+    .about-us p {
+        font-size: 0.9rem;
+        line-height: 1.3rem;
+    }
+
+    .about-me-table li {
+        font-size: 0.9rem;
     }
 
     .services {
         grid-template-columns: 1fr;
+        gap: 10px; /* Menor espaçamento entre os itens */
     }
 
-    .contactMe form input,
-    .contactMe form textarea {
-        width: 100%;
+    .services h2, .services h3 {
+        font-size: 1rem;
+    }
+
+    .services p {
+        font-size: 0.8rem; /* Texto mais compacto */
+    }
+
+    .skill-column p {
+        font-size: 0.9rem; 
+    }
+
+    .contactMe {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
         padding: 10px;
     }
 
-    footer {
-        font-size: 0.7rem;
+    .contactMe h1 {
+        font-size: 1.2rem; /* Fonte reduzida */
+    }
+
+    .contactMe form {
+        font-size: 0.9rem;
+        width: 100%;
+    }
+
+    aside {
+        width: 20%; /* Menor largura do menu */
+        padding: 5px; /* Menos espaço interno */
+    }
+
+    ul.Links li i {
+        font-size: 0.8rem; /* Ícones ainda menores */
+    }
+
+    ul.Links li p {
+        font-size: 0.9rem; /* Texto ainda mais compacto */
+    }
+
+    /* Formulário */
+    .form input[type="text"],
+    .form input[type="email"],
+    .form textarea {
+        width: 100%; /* Ocupa toda a largura disponível */
+        max-width: 450px; /* Limite um pouco menor */
+        height: 35px; /* Altura reduzida */
+        padding: 12px; /* Menos padding */
+        margin-bottom: 10px; /* Menor espaçamento entre campos */
+        font-size: 0.9rem;
+        border-radius: 8px;
+    }
+
+    .form textarea {
+        height: 120px; /* Altura reduzida para textarea */
+        resize: vertical;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .form button {
+        width: 100px; /* Largura menor para o botão */
+        height: 35px; /* Altura reduzida */
+        background-color: #123458;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 0.9rem;
+        transition: background-color 0.3s ease;
+    }
+
+    .form button:hover {
+        background-color: #4b86ca;
     }
 }
+
+
 
 /* Para telas menores que 480px */
 @media (max-width: 480px) {
